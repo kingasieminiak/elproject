@@ -8,10 +8,23 @@
     justify-content: space-between;
     padding: 11px 7px;
     margin: 5px 0;
+    color: $contentIssueText;
 
     &__icon {
         padding-top: 3px;
         width: 17px;
         height: 17px;
     }
+
+    &__text {
+        font-size: 15px;
+        letter-spacing: 0.075px; // photoshop letter spacing (px) * font-size (px) / 1000 
+    }
+}
+
+.issue-date {
+    font-size: 12px;
+    letter-spacing: 0.075px;
+    color: #8a8995;
+    padding: 3px 0;
 }

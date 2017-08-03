@@ -9,6 +9,16 @@
 
     &__name {
         padding: 0 10px;
+        font-size: 14px;
+        letter-spacing: 0.75px;
+    }
+
+    &__counter{
+        font-size: 14px;
+        letter-spacing: 0.75px;
+       	-webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #8a8995;
     }
 
     &:hover {
