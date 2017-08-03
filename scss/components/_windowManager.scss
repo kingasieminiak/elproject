@@ -1,0 +1,29 @@
+.windowManager{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border-bottom-left-radius: 0;
+    opacity: 1;
+    list-style: none;
+    display: flex;
+    padding: 16px;
+}
+
+.title-bar-button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.close-button{
+    background-color: $closeButton;
+}
+
+.minimize-button{
+     background-color: $minimizeButton;
+}
+
+.zoom-button{
+     background-color: $zoomButton;
+}

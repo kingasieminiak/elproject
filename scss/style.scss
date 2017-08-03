@@ -1,1 +1,12 @@
-@import "./test/test";
+@import "./base/reset";
+@import "./base/background";
+
+@import "./utils/colors";
+@import "./utils/fonts";
+
+@import "./components/appWindow";
+@import "./components/sidebar";
+@import "./components/sidebarItem";
+@import "./components/windowManager";
+@import "./components/windowContent";
+@import "./components/issue";

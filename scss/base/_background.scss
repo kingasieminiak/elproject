@@ -1,0 +1,13 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-position-x: center;
+}
+
+.root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 2em;
+}

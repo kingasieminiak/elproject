@@ -1,0 +1,31 @@
+.sidebar__filter-items {
+    width: 100%;   
+}
+
+.filter-item {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+
+    &__name {
+        padding: 0 10px;
+    }
+
+    &:hover {
+        background-color: $sidebarItemHover;
+    }
+
+     &:active {
+        background-color: $sidebarItemHover;
+        opacity: 1;
+    }
+}
+
+.justify-end {
+  margin-left: auto;
+}
+
+.active-item {
+    background-color: $sidebarItemHover;
+    opacity: 1;
+}
