@@ -3,6 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="apple-touch-icon" sizes="57x57" href="./favicons.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./favicons.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./favicons.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicons.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./favicons.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./favicons.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./favicons.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./favicons.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./favicons.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicons.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicons.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicons.ico/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         <title>Github Issues App</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -17,17 +34,17 @@
                             <li class="zoom-button title-bar-button"></li>
                         </ul>
                     <div class="sidebar__filter-items">
-                            <div class="filter-item active-item">
+                            <div class="filter-item active-item" data-category="all">
                                 <img src="./images/icon-github.svg" alt="GitHub Icon" class="filter-item__icon">
                                 <p class="filter-item__name">All</p>
                                 <p class="filter-item__counter justify-end" >12</p>
                             </div>
-                            <div class="filter-item">
+                            <div class="filter-item" data-category="open">
                                 <img src="./images/icon-open-issue.svg" alt=" Open Issue Icon" class="filter-item__icon">
                                 <p class="filter-item__name">Open</p>
                                 <p class="filter-item__counter justify-end">4</p>
                             </div>
-                            <div class="filter-item">
+                            <div class="filter-item" data-category="closed">
                                 <img src="./images/icon-closed-issue.svg" alt="Closed Issue Icon" class="filter-item__icon">
                                 <p class="filter-item__name">Closed</p>
                                 <p class="filter-item__counter justify-end">8</p>
@@ -36,52 +53,62 @@
                 </nav>
                 <div class="appWindow__content">
                     <div class="issue-date"><p>19-07-2016</p></div>
-                    <div class="issue">
+                    <div class="issue" data-category="closed">
                         <p class="issue__text">Page changes</p>
-                        <i class="fa fa-star issue__icon" aria-hidden="true"></i>
+                        <i class="fa fa-star issue__icon active-issue-icon" aria-hidden="true"></i>
                     </div>
-                    <div class="issue">
+                    <div class="issue" data-category="open">
                         <p class="issue__text">Review of last issues</p>
-                        <i class="fa fa-star issue__icon" aria-hidden="true"></i>
+                        <i class="fa fa-star issue__icon active-issue-icon" aria-hidden="true"></i>
                     </div>
                     <div class="issue-date"><p>19-07-2016</p></div>
-                    <div class="issue">
+                    <div class="issue" data-category="closed">
                         <p class="issue__text">Visual UI Update Review</p>
                         <i class="fa fa-star issue__icon" aria-hidden="true"></i>
                     </div>
-                    <div class="issue">
+                    <div class="issue" data-category="open">
                         <p class="issue__text">Sidebar changes</p>
                         <i class="fa fa-star issue__icon" aria-hidden="true"></i>
                     </div>
                     <div class="issue-date"><p>19-07-2016</p></div>
-                    <div class="issue">
-                        <p class="issue__text">Page visual UI Update Review</p>
-                        <i class="fa fa-star issue__icon" aria-hidden="true"></i>
-                    </div>
-                    <div class="issue">
-                        <p class="issue__text">Sidebar update</p>
-                        <i class="fa fa-star issue__icon" aria-hidden="true"></i>
-                    </div>
-                    <div class="issue">
-                        <p class="issue__text">Crash issue</p>
-                        <i class="fa fa-star issue__icon" aria-hidden="true"></i>
-                    </div>
-                    <div class="issue-date"><p>19-07-2016</p></div>
-                    <div class="issue">
-                        <p class="issue__text">Visual update & Crash resolve</p>
-                        <i class="fa fa-star issue__icon" aria-hidden="true"></i>
-                    </div>
-                    <div class="issue">
+                    <div class="issue" data-category="closed">
                         <p class="issue__text">Crash update</p>
                         <i class="fa fa-star issue__icon" aria-hidden="true"></i>
                     </div>
-                    <div class="issue">
+                    <div class="issue" data-category="open">
+                        <p class="issue__text">Page visual UI Update Review</p>
+                        <i class="fa fa-star issue__icon active-issue-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="issue" data-category="closed">
+                        <p class="issue__text">Sidebar update</p>
+                        <i class="fa fa-star issue__icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="issue-date"><p>19-07-2016</p></div>
+                    <div class="issue" data-category="open">
+                        <p class="issue__text">Crash update</p>
+                        <i class="fa fa-star issue__icon active-issue-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="issue" data-category="cloded">
+                        <p class="issue__text">Visual update & Crash resolve</p>
+                        <i class="fa fa-star issue__icon active-issue-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="issue" data-category="closed">
                         <p class="issue__text">Visual UI Update Review</p>
+                        <i class="fa fa-star issue__icon" aria-hidden="true"></i>
+                    </div> 
+                    <div class="issue" data-category="closed">
+                        <p class="issue__text">Page visual UI Update Review</p>
+                        <i class="fa fa-star issue__icon" aria-hidden="true"></i>
+                    </div> 
+                    <div class="issue" data-category="closed">
+                        <p class="issue__text">Sidebar update</p>
                         <i class="fa fa-star issue__icon" aria-hidden="true"></i>
                     </div> 
                 </div>
             </div>
          </div>
     </body>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/app.js"></script>
     <script src="https://use.fontawesome.com/9050c0e64b.js"></script>
 </html>
