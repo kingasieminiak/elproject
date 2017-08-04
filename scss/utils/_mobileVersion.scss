@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px) {
+    .root{
+        height: auto;
+    }
+
+    .appWindow {
+        flex-direction: column;
+        height: auto;
+
+        &__content {
+            width: 100%;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 10px;
+            overflow-y: auto;
+            padding-right: 11px;
+        }
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .filter-item {
+        width: auto;
+    }
+}
