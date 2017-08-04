@@ -1,5 +1,5 @@
 .sidebar__filter-items {
-    width: 100%;   
+    width: 100%; 
 }
 
 .filter-item {
@@ -10,7 +10,7 @@
     &__name {
         padding: 0 10px;
         font-size: 14px;
-        letter-spacing: 0.75px;
+        letter-spacing: 0.70px;
     }
 
     &__counter{
@@ -19,10 +19,13 @@
        	-webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: #8a8995;
+        position: relative;
     }
 
-    &:hover {
-        background-color: $sidebarItemHover;
+     &:hover {
+         -webkit-box-shadow:inset 0px 0px 0px 2px $sidebarItemHover;
+         -moz-box-shadow:inset 0px 0px 0px 2px $sidebarItemHover;
+         box-shadow:inset 0px 0px 0px 2px $sidebarItemHover;
     }
 
      &:active {

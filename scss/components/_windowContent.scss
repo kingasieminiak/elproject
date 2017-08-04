@@ -4,7 +4,10 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: $contentBackground;
-    padding: 8px 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    padding-right: 13px;
     overflow-y: scroll;
     border-right: 3px solid $contentBackground;
 
