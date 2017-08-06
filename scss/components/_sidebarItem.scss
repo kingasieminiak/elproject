@@ -1,36 +1,36 @@
-.sidebar__filter-items {
+.sideBar__menu {
     width: 100%; 
-}
 
-.filter-item {
-    display: flex;
-    width: 100%;
-    padding: 16px;
+    &__item {
+        display: flex;
+        width: 100%;
+        padding: 16px;
 
-    &__name {
-        padding: 0 10px;
-        font-size: 14px;
-        letter-spacing: 0.70px;
-    }
+        &__name {
+            padding: 0 10px;
+            font-size: 14px;
+            letter-spacing: 0.70px;
+        }
 
-    &__counter{
-        font-size: 14px;
-        letter-spacing: 0.75px;
-       	-webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: #8a8995;
-        position: relative;
-    }
+        &__counter {
+            font-size: 14px;
+            letter-spacing: 0.75px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #8a8995;
+            position: relative;
+        }
 
-     &:hover {
-         -webkit-box-shadow:inset 0px 0px 0px 2px $sidebarItemHover;
-         -moz-box-shadow:inset 0px 0px 0px 2px $sidebarItemHover;
-         box-shadow:inset 0px 0px 0px 2px $sidebarItemHover;
-    }
+        &:hover {
+            -webkit-box-shadow:inset 0px 0px 0px 2px $sidebarItemHover;
+            -moz-box-shadow:inset 0px 0px 0px 2px $sidebarItemHover;
+            box-shadow:inset 0px 0px 0px 2px $sidebarItemHover;
+        }
 
-     &:active {
-        background-color: $sidebarItemHover;
-        opacity: 1;
+        &:active {
+            background-color: $sidebarItemHover;
+            opacity: 1;
+        }
     }
 }
 
@@ -38,7 +38,7 @@
   margin-left: auto;
 }
 
-.active-item {
+.is-active {
     background-color: $sidebarItemHover;
     opacity: 1;
 }

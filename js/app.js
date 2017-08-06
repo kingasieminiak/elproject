@@ -13,14 +13,14 @@
     
     // sidebar – jQuery example
     
-    var filterItems = $('.filter-item');
+    var filterItems = $('.sideBar__menu__item');
     var issues = $('.issue');
-    var issuesGroup = $('.issue__group')
+    var issuesGroup = $('.issuesGroup')
 
      $(filterItems).click(function(event){
         
-        $(this).addClass('active-item');
-        $(this).siblings().removeClass('active-item');
+        $(this).addClass('is-active');
+        $(this).siblings().removeClass('is-active');
         
         var current = $(this).data('category');
         

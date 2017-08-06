@@ -1,4 +1,15 @@
-.issue{
+.issuesGroup {
+   
+    &__date {
+        font-size: 12px;
+        letter-spacing: 0.075px;
+        color: #8a8995;
+        padding-top: 1px;
+        padding-bottom: 2px;
+    }
+}
+
+.issue {
     width: 100%;
     min-height: 40px;
     background-color: $contentIssueBackground;
@@ -11,17 +22,12 @@
     color: $contentIssueText;
 
     &__icon {
-        padding-top: 3px;
         width: 17px;
         height: 16px;
-        color: white;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color:  $contentIssueBorder;
-        cursor: pointer;
-
-        &:hover{
-            transform: scale(1.2);
-        }
+        fill: white;
+        stroke: $contentIssueBorder;
+        stroke-width: 1px;
+        stroke-linejoin: round;
 
         &:active {
             color: $contentLIssueShapeActive;
@@ -36,18 +42,25 @@
         letter-spacing: 0.075px; // photoshop letter spacing (px) * font-size (px) / 1000 
         padding-right: 20px;
     }
+
+    &__iconContainer{
+        padding-top: 2px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        svg {
+            padding-left: 2px;
+            padding-top: 1px;
+        }
+    }
 }
 
-.issue-date {
-    font-size: 12px;
-    letter-spacing: 0.075px;
-    color: #8a8995;
-    padding-top: 1px;
-    padding-bottom: 2px;
-}
-
-.active-issue-icon{
-    color: $contentLIssueShapeActive;
-    -webkit-text-stroke-width: 0;
-    -webkit-text-stroke-color: transparent;
+.active-issue-icon {
+    fill: $contentLIssueShapeActive;
+    stroke: $contentLIssueShapeActive;
 }

@@ -1,29 +1,29 @@
-.windowManager{
+.titleBar {
     width: 100%;
     height: auto;
     background-color: $windowManager;
-    border-bottom-left-radius: 0;
+    border-top-left-radius: 10px;
     opacity: 1;
     list-style: none;
     display: flex;
     padding: 16px;
+
+    &__button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
 }
 
-.title-bar-button{
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    margin-right: 10px;
-}
-
-.close-button{
+.closeButton {
     background-color: $closeButton;
 }
 
-.minimize-button{
+.minimizeButton {
      background-color: $minimizeButton;
 }
 
-.zoom-button{
+.zoomButton {
      background-color: $zoomButton;
 }
