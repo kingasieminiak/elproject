@@ -2,10 +2,10 @@
     
     // issue icons – ES6 example
 
-    const issueIcons = document.querySelectorAll('.issue__icon');
+    const issueIcons = document.querySelectorAll('.issue__iconContainer');
 
     function onUserClickIcon(event) {
-        event.target.classList.toggle('active-issue-icon');
+        this.firstElementChild.classList.toggle('active-issue-icon');
     }
 
     Array.from(issueIcons).forEach( e => e.addEventListener('click', onUserClickIcon) );

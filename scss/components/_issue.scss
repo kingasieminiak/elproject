@@ -22,17 +22,18 @@
     color: $contentIssueText;
 
     &__icon {
-        width: 17px;
-        height: 16px;
         fill: white;
         stroke: $contentIssueBorder;
         stroke-width: 1px;
         stroke-linejoin: round;
 
         &:active {
-            color: $contentLIssueShapeActive;
-            -webkit-text-stroke-width: 0;
-            -webkit-text-stroke-color: transparent;
+            fill: $contentLIssueShapeActive;
+            stroke: transparent;
+        }
+
+        &:hover {
+            transform: scale(1.2);
         }
     }
 
@@ -48,19 +49,10 @@
         width: 17px;
         height: 17px;
         cursor: pointer;
-
-        &:hover {
-            transform: scale(1.2);
-        }
-
-        svg {
-            padding-left: 2px;
-            padding-top: 1px;
-        }
     }
 }
 
 .active-issue-icon {
     fill: $contentLIssueShapeActive;
-    stroke: $contentLIssueShapeActive;
+    stroke: transparent;
 }
