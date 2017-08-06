@@ -18,6 +18,8 @@ The project is an example of Github Issues App. To see the effect, please visit:
 
 * I added mobile version which is not in PDF project.
 
+* Star icon — at the beginning I used font awesome icons (You can check it in commits history), because is simple to change the color of them using JS toggle class. But then I decided to use SVG icon which was in assets folder. I used them as a path in SVG tag. The finnal result is not as pretty as it looks. The solution works a bit worse on mobile screens. I also had to changed path of icon (it was unclosed). 
+
 
 # 3. Sass 
 
