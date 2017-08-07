@@ -21,6 +21,12 @@
     margin: 5px 0;
     color: $contentIssueText;
 
+    &__iconContainer {
+        padding-top: 2px;
+        width: 17px;
+        height: 17px;
+    }
+
     &__icon {
         fill: white;
         stroke: $contentIssueBorder;
@@ -42,13 +48,6 @@
 
         letter-spacing: 0.075px; // photoshop letter spacing (px) * font-size (px) / 1000 
         padding-right: 20px;
-    }
-
-    &__iconContainer{
-        padding-top: 2px;
-        width: 17px;
-        height: 17px;
-        cursor: pointer;
     }
 }
 
